@@ -617,6 +617,33 @@ object {
     display: block;
 }
 
+/** TEMP OVERRIDES: should be moved into main areas */
+
+body {
+    margin: 0px;
+    padding: 20px 0px;
+    text-align: center;
+    font-family: Monospace;
+    color: #585858;
+}
+
+#page {
+    margin: 0px auto;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.4;
+    width: 850px;
+}
+
+#primary {
+    width: 600px;
+    float: right;
+}
+
+#secondary, #masthead {
+    float: left;
+    width: 250px;
+}
 /**
  * Pasted from theme: Monospace
  * Theme URI: http://vinicius.soylocoporti.org.br/monospace-wordpress-theme
@@ -626,7 +653,6 @@ object {
  * License: GNU General Public License v2.0
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-body { margin:0px; padding:20px 0px; text-align:center; font-family:Monospace; color:#585858; }
 a, a:visited { text-decoration:none; color:#317502; }
 a:hover { color:#FFF; background-color:#317502 }
 pre { background:#EAEAEA; padding: 5px; color: 010101; }
@@ -638,7 +664,7 @@ blockquote cite { display:block; padding:10px 20px 0 0; text-align:right; }
 input, textarea { padding:5px; border:1px solid #8A8A8A; background:#EAEAEA; }
 input:hover, textarea:hover, blockquote:hover { background:#E5E5E5; }
 
-#page { margin:0px auto; text-align:left; font-size: 13px; line-height: 1.4; width: 850px;}
+
 #primary { float:right; }
 #secondary { overflow:hidden; clear:left; text-align:right; width:250px; height:auto; padding:0px 15px 0px 0px; border-right:1px dotted #C8C8C8; }
 #secondary li { list-style-type:none; }
