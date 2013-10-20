@@ -614,26 +614,30 @@ object {
 	display: block;
 }
 
-/** TEMP OVERRIDES: should be moved into main areas */
-
+/* =Basic Layout and color scheme
+----------------------------------------------- */
 body {
-	margin: 0px;
 	padding: 20px 0px;
-	text-align: center;
-	font-family: Monospace;
+	font-family: Courier, monospace;
 	color: #585858;
 }
 
 /* Headers */
 h1 {
 	font-size: 1.5em;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
 }
+/** TEMP OVERRIDES: should be moved into main areas */
 h1.site-title {
 	font-size: 2em;
-
+	border-bottom: 1px dotted #C8C8C8;
 }
 h1, h2 {
 	font-weight: bold;
+}
+h2.site-description {
+	font-weight: normal;
 }
 
 .post {
@@ -674,8 +678,6 @@ h1, h2 {
 #secondary h1 { border-bottom:1px dotted #C8C8C8; }
 #secondary .description { display:block; width:100%; height:auto; margin:0px 0px 10px 0px; }
 
-h1, h2, h3, h4, h5, h6, h7 { margin:0px; text-transform:uppercase; }
-h1 { padding:0px 0px 15px; margin:0px 0px 10px 0px; }
 
 /**
  * Pasted from theme: Monospace
