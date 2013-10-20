@@ -311,16 +311,16 @@ textarea {
 }
 
 /* Links */
-a {
-	color: royalblue;
-}
-a:visited {
-	color: purple;
+a,
+a:visited  {
+	text-decoration: none;
+	color: #317502;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #FFF;
+	background-color: #317502
 }
 
 /* Alignment */
@@ -673,10 +673,6 @@ h1, h2 {
 #secondary > li { margin:20px 0px; }
 #secondary h1 { border-bottom:1px dotted #C8C8C8; }
 #secondary .description { display:block; width:100%; height:auto; margin:0px 0px 10px 0px; }
-
-/* Link colors */
-a, a:visited { text-decoration:none; color:#317502; }
-a:hover { color:#FFF; background-color:#317502 }
 
 h1, h2, h3, h4, h5, h6, h7 { margin:0px; text-transform:uppercase; }
 h1 { padding:0px 0px 15px; margin:0px 0px 10px 0px; }
