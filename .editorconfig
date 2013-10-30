@@ -1,0 +1,21 @@
+# Meant to match WordPress standards.
+# You should also configure phpcs with WordPress settings:
+# https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.php]
+indent_style = tab
+
+[*.js]
+indent_style = tab
+
+[*.css]
+indent_style = tab
+indent_size = 2
