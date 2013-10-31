@@ -625,48 +625,42 @@ body {
 /* Headers */
 h1 {
 	font-size: 1.5em;
+	font-weight: bold;
 	padding-bottom: 15px;
 	margin-bottom: 10px;
 }
 
-/** TEMP OVERRIDES: should be moved into main areas */
-h1.site-title {
+.site-title {
 	font-size: 2em;
 	border-bottom: 1px dotted #C8C8C8;
 }
-h1, h2 {
-	font-weight: bold;
-}
-h2.site-description {
-	font-weight: normal;
+
+.site-main {
+	padding-left: 1.5em;
 }
 
-.post {
-	padding-left: 1em;
-}
-
-#page {
+.hfeed {
 	margin: 0px auto;
 	text-align: left;
 	font-size: 13px;
 	line-height: 1.4;
-	width: 850px;
+	width: 860px;
 }
-#secondary, #masthead {
+.widget-area, .site-header {
 	overflow: hidden;
 	clear: left;
 	text-align: right;
 	height: auto;
-	padding: 0px 15px 0px 0px;
+	padding-right: 1.5em;
 	border-right: 1px dotted #C8C8C8;
 }
-#primary {
+.content-area {
 	width: 600px;
 	float: right;
 }
 
 /* Make both header and sidebar to the left */
-#secondary, #masthead {
+.widget-area, .site-header {
 	float: left;
 	width: 230px; /* 250 */
 	text-align: right;
@@ -677,9 +671,8 @@ table tr:nth-child(even) {
 }
 
 /* Sidebar */
-/*#secondary { overflow:hidden; clear:left; text-align:right; height:auto; padding:0px 15px 0px 0px; border-right:1px dotted #C8C8C8; }*/
-#secondary li { list-style-type:none; }
-#secondary > li { margin:20px 0px; }
-#secondary h1 { border-bottom:1px dotted #C8C8C8; }
-#secondary .description { display:block; width:100%; height:auto; margin:0px 0px 10px 0px; }
-
+/*.widget-area { overflow:hidden; clear:left; text-align:right; height:auto; padding:0px 15px 0px 0px; border-right:1px dotted #C8C8C8; }*/
+.widget-area li { list-style-type:none; }
+.widget-area > li { margin:20px 0px; }
+.widget-area h1 { border-bottom:1px dotted #C8C8C8; }
+.widget-area .description { display:block; width:100%; height:auto; margin:0px 0px 10px 0px; }
