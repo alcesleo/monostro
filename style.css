@@ -626,22 +626,29 @@ object {
 body {
 	padding: 20px 0px;
 	font-family: Courier, monospace;
+	background: #fefefe;
 	color: #585858;
 }
 
-/* Headers */
+/* Titles */
 h1 {
-	font-size: 1.5em;
 	font-weight: bold;
 	padding-bottom: 15px;
 	margin-bottom: 10px;
 }
-
+.entry-title,
+.widget-title {
+	font-size: 1.5em;
+}
 .site-title {
 	font-size: 2em;
 	border-bottom: 1px dotted #C8C8C8;
 }
+.site-description {
+	margin-bottom: 10px;
+}
 
+/* Content */
 .site-main {
 	padding-left: 1.5em;
 }
@@ -653,28 +660,80 @@ h1 {
 	line-height: 1.4;
 	width: 860px;
 }
-.widget-area, .site-header {
-	overflow: hidden;
-	clear: left;
-	text-align: right;
-	height: auto;
-	padding-right: 1.5em;
-	border-right: 1px dotted #C8C8C8;
-}
+
 .content-area {
 	width: 600px;
 	float: right;
 }
 
-/* Make both header and sidebar to the left */
+/* Sidebar */
 .widget-area, .site-header {
+	height: auto;
+	padding-right: 1.5em;
+	border-right: 1px dotted #C8C8C8;
+
+	/* keep left */
 	float: left;
-	width: 230px; /* 250 */
+	width: 230px;
 	text-align: right;
 }
 
+
+/* =Responsive layout
+----------------------------------------------- */
+
+/*  Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* Basic layout is still more narrow than this */
+	.hfeed {
+		width: 600px;
+		margin: 0 auto;
+	}
+	/* Put the sidebar into column */
+	.widget-area,
+	.site-header {
+		float: none;
+		width: 100%;
+		border-right: none;
+	}
+	/* Restructure the widgets */
+	.widget-area {
+		text-align: left;
+
+
+		/* 2 column layout */
+		-moz-column-count:2; /* Firefox */
+		-webkit-column-count:2; /* Safari and Chrome */
+		column-count:2;
+	}
+	/* remove list indentation */
+	.widget-area ul {
+		margin: 0;
+	}
+	.widget-title {
+		border: none;
+	}
+	.content-area {
+		/*float: none;*/
+	}
+}
+/*  Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+}
+/*  Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* =Misc
+----------------------------------------------- */
+
+/* Table styles */
 table tr:nth-child(even) {
 	background: #eee;
 }
+
+
 
 
