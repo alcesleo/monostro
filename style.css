@@ -628,6 +628,25 @@ h1 {
 	padding-bottom: 15px;
 	margin-bottom: 10px;
 }
+
+
+/* =Responsive layout
+----------------------------------------------- */
+
+/*  Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/*  Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+}
+/*  Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+
+
+
+
 /** TEMP OVERRIDES: should be moved into main areas */
 h1.site-title {
 	font-size: 2em;
@@ -669,6 +688,10 @@ h2.site-description {
 	float: left;
 	width: 230px; /* 250 */
 	text-align: right;
+}
+
+table tr:nth-child(even) {
+	background: #eee;
 }
 
 /* Sidebar */
