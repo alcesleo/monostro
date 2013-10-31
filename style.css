@@ -589,6 +589,10 @@ object {
 	margin: 0 0 1.5em;
 }
 
+.widget li {
+	list-style: none;
+}
+
 /* Make sure select elements fit in widgets */
 .widget select {
 	max-width: 100%;
@@ -599,6 +603,9 @@ object {
 	display: none;
 }
 
+.widget-title {
+	border-bottom: 1px dotted #C8C8C8;
+}
 
 /* =Infinite Scroll
 ----------------------------------------------- */
@@ -670,9 +677,4 @@ table tr:nth-child(even) {
 	background: #eee;
 }
 
-/* Sidebar */
-/*.widget-area { overflow:hidden; clear:left; text-align:right; height:auto; padding:0px 15px 0px 0px; border-right:1px dotted #C8C8C8; }*/
-.widget-area li { list-style-type:none; }
-.widget-area > li { margin:20px 0px; }
-.widget-area h1 { border-bottom:1px dotted #C8C8C8; }
-.widget-area .description { display:block; width:100%; height:auto; margin:0px 0px 10px 0px; }
+
