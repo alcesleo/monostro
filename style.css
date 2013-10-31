@@ -667,7 +667,8 @@ h1 {
 }
 
 /* Sidebar */
-.widget-area, .site-header {
+.widget-area,
+.site-header {
 	height: auto;
 	padding-right: 1.5em;
 	border-right: 1px dotted #C8C8C8;
@@ -689,12 +690,16 @@ h1 {
 		width: 600px;
 		margin: 0 auto;
 	}
-	/* Put the sidebar into column */
+	.site-main {
+		padding-left: 0;
+	}
+	/* Put the sidebar back */
 	.widget-area,
 	.site-header {
 		float: none;
 		width: 100%;
 		border-right: none;
+		padding-right: 0;
 	}
 	/* Restructure the widgets */
 	.widget-area {
