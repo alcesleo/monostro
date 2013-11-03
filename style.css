@@ -261,14 +261,10 @@ input[type="submit"]:active {
 }
 input[type="checkbox"],
 input[type="radio"] {
-	box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
 input[type="search"] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
-	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
-	-moz-box-sizing:    content-box;
-	box-sizing:         content-box;
 }
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
 	-webkit-appearance: none;
@@ -391,6 +387,13 @@ a:active {
 .site-content:after,
 .site-footer:after {
 	clear: both;
+}
+
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
@@ -692,11 +695,11 @@ h1 {
 
 /*  Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	/* Basic layout is still more narrow than this */
 	.hfeed {
 		width: 500px;
 		margin: 0 auto;
 	}
+	/* remove the gap */
 	.site-main {
 		padding-left: 0;
 	}
