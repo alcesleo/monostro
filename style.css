@@ -683,6 +683,7 @@ h1 {
 .site-info {
 	text-align: center;
 	padding-top: 15px;
+	margin-top: 15px;
 	border-top: 1px dotted #C8C8C8;
 }
 
@@ -693,7 +694,7 @@ h1 {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	/* Basic layout is still more narrow than this */
 	.hfeed {
-		width: 600px;
+		width: 500px;
 		margin: 0 auto;
 	}
 	.site-main {
@@ -710,7 +711,9 @@ h1 {
 	/* Restructure the widgets */
 	.widget-area {
 		text-align: left;
-
+		margin-top: 15px;
+		padding-top: 15px;
+		border-top: 1px dotted #C8C8C8;
 
 		/* 2 column layout */
 		-moz-column-count:2; /* Firefox */
