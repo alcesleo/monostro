@@ -658,11 +658,11 @@ h1 {
 	text-align: left;
 	font-size: 13px;
 	line-height: 1.4;
-	width: 860px;
+	width: 760px;
 }
 
 .content-area {
-	width: 600px;
+	width: 500px;
 	float: right;
 }
 
@@ -679,6 +679,12 @@ h1 {
 	text-align: right;
 }
 
+/* Footer */
+.site-info {
+	text-align: center;
+	padding-top: 15px;
+	border-top: 1px dotted #C8C8C8;
+}
 
 /* =Responsive layout
 ----------------------------------------------- */
