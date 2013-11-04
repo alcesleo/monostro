@@ -654,10 +654,6 @@ h1 {
 }
 
 /* Content */
-.site-main {
-	padding-left: 1.5em;
-}
-
 .hfeed {
 	margin: 0px auto;
 	text-align: left;
@@ -667,8 +663,10 @@ h1 {
 }
 
 .content-area {
-	width: 500px;
+	width: 530px; /* TODO: Look over this; */
+	padding-left: 1.5em; /* distance to sidebar */
 	float: right;
+	margin: 0;
 }
 
 /* Sidebar */
@@ -695,54 +693,62 @@ h1 {
 /* =Responsive layout
 ----------------------------------------------- */
 
-/*  Tablet Layout: 768px. */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* Tablet and below */
+@media only screen and (max-width: 991px) {
+
+	/* Dynamic width */
 	.hfeed {
-		width: 500px;
-		margin: 0 auto;
-	}
-	/* remove the gap */
-	.site-main {
-		padding-left: 0;
-	}
-	/* Put the sidebar back */
-	.widget-area,
-	.site-header {
-		float: none;
-		width: 100%;
-		border-right: none;
-		padding-right: 0;
-	}
-	/* Restructure the widgets */
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .content-area {
+  	width: 100%;
+  	padding-left: 0;
+  }
+
+  /* Put the sidebar underneath */
+  .widget-area,
+  .site-header {
+    float: none;
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  /* Restructure the widgets */
+  .widget-area {
+    clear: both;
+    text-align: left;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dotted #C8C8C8;
+
+		/* 2 column layout for widgets */
+    /* FIXME: Search box outline gets cut off in multi column */
+    -moz-column-count:2; /* Firefox */
+    -webkit-column-count:2; /* Safari and Chrome */
+    column-count:2;
+  }
+
+  /* remove list indentation */
+  .widget-area ul {
+      margin: 0;
+  }
+
+  .widget-title {
+      border: none;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+	/* too narrow for 2 column widgets */
 	.widget-area {
-		text-align: left;
-		margin-top: 15px;
-		padding-top: 15px;
-		border-top: 1px dotted #C8C8C8;
-
-		/* 2 column layout */
-		-moz-column-count:2; /* Firefox */
-		-webkit-column-count:2; /* Safari and Chrome */
-		column-count:2;
+    -moz-column-count:1; /* Firefox */
+    -webkit-column-count:1; /* Safari and Chrome */
+    column-count:1;
 	}
-	/* remove list indentation */
-	.widget-area ul {
-		margin: 0;
-	}
-	.widget-title {
-		border: none;
-	}
-	.content-area {
-		/*float: none;*/
-	}
-}
-/*  Mobile Layout: 320px. */
-@media only screen and (max-width: 767px) {
-
-}
-/*  Wide Mobile Layout: 480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
 }
 
 /* =Misc
