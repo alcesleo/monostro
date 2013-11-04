@@ -100,6 +100,16 @@ function monostro_scripts() {
 add_action( 'wp_enqueue_scripts', 'monostro_scripts' );
 
 /**
+ * Use jQuery 2
+ */
+function jquery_upgrade() {
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js', false, '2.0.3' );
+	wp_enqueue_script( 'jquery' );
+}
+add_action( 'init', 'jquery_upgrade' );
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
