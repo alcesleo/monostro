@@ -109,7 +109,7 @@ function monostro_upgrade_jquery() {
 		wp_enqueue_script( 'jquery' );
 	}
 }
-add_action( 'init', 'monostro_upgrade_jquery' );
+add_action( 'wp_enqueue_scripts', 'monostro_upgrade_jquery' );
 
 /**
  * Implement the Custom Header feature.
