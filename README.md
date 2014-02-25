@@ -10,8 +10,3 @@ Extra features:
 
 - jQuery 2
 - Responsive design (tablet and mobile-modes)
-
-## To do
-
-- Show last updated dates
-- Screenshot
